@@ -59,4 +59,15 @@ console.log(mailElement);
 for (let i = 0; i < teamMembers.length; i++) {
   const member = teamMembers[i];
   console.log(member);
+  //AGGIUNGO AL FOGLIO HTML
+  const cardHTML = `<div id="card">
+        <img src="${member.img}" alt="${member.name}" />
+        <div id="info">
+          <h3 id="name">${member.name}</h3>
+          <p id="role">${member.role}</p>
+          <a href="#" id="mail">${member.email}</a>
+        </div>
+      </div>
+      `;
+  containerElement.innerHTML += cardHTML;
 }
