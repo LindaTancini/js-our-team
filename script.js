@@ -54,3 +54,9 @@ console.log(roleElement);
 //PRENDO EMAIL
 const mailElement = document.getElementById("mail");
 console.log(mailElement);
+
+// CICLO FOR PER VEDERE I MEMBRI DEL TEAM
+for (let i = 0; i < teamMembers.length; i++) {
+  const member = teamMembers[i];
+  console.log(member);
+}
