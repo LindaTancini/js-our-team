@@ -44,7 +44,7 @@ const containerElement = document.getElementById("team-container");
 console.log(containerElement);
 
 //SVUOTO IL CONTAINER
-containerElement.innerHTML = "";
+//containerElement.innerHTML = ""; CON QUESTO COMANDO SVUOTO LA PARTE DI HTML
 // CICLO FOR PER VEDERE I MEMBRI DEL TEAM
 for (let i = 0; i < teamMembers.length; i++) {
   const member = teamMembers[i];
