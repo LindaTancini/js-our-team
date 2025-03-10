@@ -42,19 +42,9 @@ const teamMembers = [
 //PRENDO CONTAINER
 const containerElement = document.getElementById("team-container");
 console.log(containerElement);
-//PRENDO IMMAGINE
-const imageElement = document.querySelector("img");
-console.log(imageElement);
-//PRENDO NOME
-const nameElement = document.getElementById("name");
-console.log(nameElement);
-//PRENDO RUOLO
-const roleElement = document.getElementById("role");
-console.log(roleElement);
-//PRENDO EMAIL
-const mailElement = document.getElementById("mail");
-console.log(mailElement);
 
+//SVUOTO IL CONTAINER
+containerElement.innerHTML = "";
 // CICLO FOR PER VEDERE I MEMBRI DEL TEAM
 for (let i = 0; i < teamMembers.length; i++) {
   const member = teamMembers[i];
