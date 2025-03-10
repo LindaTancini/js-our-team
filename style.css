@@ -3,6 +3,7 @@
 body {
   background-color: pink;
   text-align: center;
+  font-family: "Fredoka", sans-serif;
 }
 
 * {
@@ -15,8 +16,14 @@ body {
 
 h1 {
   color: #ff4081;
-  font-size: 28px;
+  font-size: 50px;
   padding: 50px 20px;
+}
+
+header p {
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* CARD CONTAINER */
@@ -24,19 +31,38 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  max-width: 1390px;
+  margin: 0 auto;
+  padding: 50px 20px;
 }
 
 #card {
-  width: calc((100% - 40px) / 3);
-  flex-shrink: 0;
-  background: #000;
-  color: #fff;
   display: flex;
+  width: calc((100% - 40px) / 3);
+  flex-shrink: 1;
+  flex-grow: 0;
   align-items: center;
   text-align: left;
+  background-color: #000;
+  color: #fff;
 }
 
 #card img {
-  width: 40%;
+  width: 30%;
   display: block;
+}
+
+#info {
+  padding: 15px;
+}
+
+#info h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #ccc;
 }
