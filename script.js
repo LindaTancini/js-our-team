@@ -37,3 +37,20 @@ const teamMembers = [
     img: "img/female3.png",
   },
 ];
+
+// PRENDO GLI ELEMENTI IN PAGINA
+//PRENDO CONTAINER
+const containerElement = document.getElementById("team-container");
+console.log(containerElement);
+//PRENDO IMMAGINE
+const imageElement = document.querySelector("img");
+console.log(imageElement);
+//PRENDO NOME
+const nameElement = document.getElementById("name");
+console.log(nameElement);
+//PRENDO RUOLO
+const roleElement = document.getElementById("role");
+console.log(roleElement);
+//PRENDO EMAIL
+const mailElement = document.getElementById("mail");
+console.log(mailElement);
