@@ -44,8 +44,10 @@ const containerElement = document.getElementById("team-container");
 console.log(containerElement);
 
 //SVUOTO IL CONTAINER
-//containerElement.innerHTML = ""; CON QUESTO COMANDO SVUOTO LA PARTE DI HTML
+containerElement.innerHTML = ""; //CON QUESTO COMANDO SVUOTO LA PARTE DI HTML
 // CICLO FOR PER VEDERE I MEMBRI DEL TEAM
+//METODO CON CICLO FOR
+/*
 for (let i = 0; i < teamMembers.length; i++) {
   const member = teamMembers[i];
   console.log(member);
@@ -60,4 +62,30 @@ for (let i = 0; i < teamMembers.length; i++) {
       </div>
       `;
   containerElement.innerHTML += cardHTML;
+}
+  */
+
+//aggangio risultato a un elemento parent
+renderHTML(containerElement, teamMembers);
+//METODO CON FUNZIONE
+function renderHTML(parent, elements) {
+  let items = "";
+  for (let i = 0; i < elements.length; i++) {
+    const currentElement = elements[i];
+    items += createHTMLElement(currentElement);
+  }
+  //metterò nell'innerHTML del parent il risultato prodotto
+  parent.innerHTML = items;
+}
+
+function createHTMLElement(obj) {
+  return `<div id="card">
+        <img src="${obj.img}" alt="${obj.name}" />
+        <div id="info">
+          <h3 id="name">${obj.name}</h3>
+          <p id="role">${obj.role}</p>
+          <a href="#" id="mail">${obj.email}</a>
+        </div>
+      </div>
+      `;
 }
